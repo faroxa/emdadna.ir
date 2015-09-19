@@ -40,14 +40,15 @@ h2 { font-size: 22px; }
 .footer .socials ul li img { width: 28px; height: 28px; }
 
 .fix-navbar { position: fixed; top: 0; z-index: 1000; }
-
+.navbar .brand {padding: 0 10px 0 20px;}
+.navbar .nav>li>a {padding: 16px 20px;}
 .header .navbar { margin-top: 15px; }
-.header .navbar .brand { font: normal 23px/1 "BKoodak", "Helvetica Neue", Helvetica, Arial, sans-serif; color: #cb0000; padding: 3px 10px 0 20px; }
+.header .navbar .brand { font: normal 23px/1 "BKoodak", "Helvetica Neue", Helvetica, Arial, sans-serif; color: #cb0000; }
 .header .navbar ul.nav li { font: normal 13px "BKoodak", "Helvetica Neue", Helvetica, Arial, sans-serif; }
 .header .navbar ul.nav li ul li { font-size: 15px; }
 .header .navbar ul.nav li ul li > a { color: #5a5a5a; }
 .header .navbar ul.nav li ul li > a:hover { color: #fff; }
-.header .navbar ul.nav li ul li span { margin-top: 5px; }
+.header .navbar ul.nav li ul li span { margin-top: 0; }
 .header .navbar .navbar-search { margin-top: 7px; margin-bottom: 0; }
 .header .navbar .navbar-search .search-query { font: normal 12px Tahoma, Geneva, sans-serif; background: url(../img/search.png) no-repeat 10px 7px; width: 200px; }
 .header .navbar .navbar-search .search-query:focus { background-color: #fff; }
