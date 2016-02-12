@@ -455,7 +455,13 @@ body {
 .container {
   margin: 0 auto;
   max-width: 100%;
-  padding: 0 10px; }
+  padding: 0 10px;
+  width: 100%; }
+  .container:before, .container:after {
+    content: "";
+    display: table; }
+  .container:after {
+    clear: both; }
 
 ul {
   list-style: none;
@@ -643,7 +649,8 @@ button, input, optgroup, select, textarea {
   float: left;
   margin-top: 6px;
   overflow: hidden;
-  position: relative; }
+  position: relative;
+  width: 200px; }
 
 .search-btn {
   background: none;
@@ -664,13 +671,25 @@ button, input, optgroup, select, textarea {
   overflow: hidden;
   padding: 0 10px;
   position: relative;
-  width: 200px; }
+  width: 100%; }
   .search-field:focus .search-btn {
     color: #F44336; }
     .search-field:focus .search-btn i {
       color: #F44336; }
 
 @media (max-width: 759px) {
+  .navbar-search-form {
+    width: 100%; }
+
+  .search-field {
+    height: 50px;
+    line-height: 50px;
+    padding-right: 20px; }
+
+  .search-btn {
+    left: 12px;
+    top: 12px; }
+
   .navbar {
     border: 0;
     height: auto;
@@ -681,21 +700,23 @@ button, input, optgroup, select, textarea {
     .navbar:after {
       clear: both; }
 
-  .navbar__actions li {
-    width: 50%;
-    min-height: 1px;
-    float: right;
-    padding: 0 10px;
-    margin-bottom: 5px;
-    text-align: center; }
-    .navbar__actions li:nth-child(2n):before, .navbar__actions li:nth-child(2n):after {
-      content: "";
-      display: table; }
-    .navbar__actions li:nth-child(2n):after {
-      clear: both; }
-    .navbar__actions li a {
-      border: 1px solid #e0e0e0;
-      border-radius: 4px; } }
+  .navbar__actions {
+    float: none; }
+    .navbar__actions li {
+      width: 50%;
+      min-height: 1px;
+      float: right;
+      padding: 0 10px;
+      margin-bottom: 5px;
+      text-align: center; }
+      .navbar__actions li:nth-child(2n):before, .navbar__actions li:nth-child(2n):after {
+        content: "";
+        display: table; }
+      .navbar__actions li:nth-child(2n):after {
+        clear: both; }
+      .navbar__actions li a {
+        border: 1px solid #e0e0e0;
+        border-radius: 4px; } }
 .b-footer:before, .b-footer:after {
   content: "";
   display: table; }
