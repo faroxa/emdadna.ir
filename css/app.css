@@ -728,7 +728,7 @@ img {
       display: table; }
     .post--grid:nth-child(2n):after {
       clear: both; } }
-@media (max-width: 939px) {
+@media (max-width: 759px) {
   .post--grid {
     width: 100%;
     min-height: 1px;
@@ -743,6 +743,9 @@ img {
   .see-more {
     visibility: visible;
     opacity: 1; } }
+@media (min-width: 940px) {
+  .post__thumbnail {
+    height: 140px; } }
 .category-box {
   width: 20%;
   min-height: 1px;
