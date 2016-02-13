@@ -986,6 +986,12 @@ object {
     .what-is-emdadna {
       background-image: url("../assets/img/what-is-emdadna@2x.png"); } }
 
+@media (max-width: 759px) {
+  .intro {
+    display: none; }
+
+  .navbar {
+    margin-bottom: 20px; } }
 .post--single {
   margin-bottom: 20px; }
   .post--single:before, .post--single:after {
