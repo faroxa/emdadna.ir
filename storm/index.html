@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="fa">
 
-  <head>
+<head>
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
@@ -19,9 +19,9 @@
 </head>
 
 
-  <body>
+<body>
 
-    <header class="site-header">
+<header class="site-header">
     <div class="wrapper">
         <div class="container">
             <a href="/" class="logo" title="امدادنا"> امدادنا </a>
@@ -38,65 +38,88 @@
 <nav class="navbar">
     <div class="wrapper">
         <div class="container">
-            <ul class="navbar__actions row">
-                <li>
-                    <a href="/"> خانه </a>
+            <ul class="navbar__actions">
+                <li
+                >
+                <a href="/"> خانه </a>
                 </li>
-                <li>
+                <li
+                >
                 <a href="/flood">سیل و سونامی</a>
                 </li>
-                <li>
+                <li
+                >
                 <a href="/earthquake">زمین‌لرزه</a>
                 </li>
-                <li>
+                <li
+                >
                 <a href="/fire">آتش‌سوزی</a>
                 </li>
-                <li class="active">
+                <li
+                 class="active">
                 <a href="/storm">طوفان</a>
                 </li>
-                <li>
+                <li
+                >
                 <a href="/rescue">کمک‌های اولیه</a>
                 </li>
             </ul>
 
             <form name="cse" class="navbar-search-form" method="get" action="https://www.google.com/search">
-
-                <input type="hidden" name="sitesearch" value="emdadna.ir" />
-                <input type="hidden" name="cref" value="" />
-                <input type="hidden" name="ie" value="utf-8" />
-                <input type="hidden" name="hl" value="fa" />
-                <input type="text" class="search-field" name="q" value="" placeholder="جستجو کنید">
+                <input type="hidden" name="sitesearch" value="emdadna.ir"/>
+                <input type="hidden" name="cref" value=""/>
+                <input type="hidden" name="ie" value="utf-8"/>
+                <input type="hidden" name="hl" value="fa"/>
+                <input type="text" id="search-field" class="search-field" name="q" value="" placeholder="جستجو کنید">
                 <button type="submit" class="search-btn"><i class="material-icons">&#xE8B6;</i></button>
+                <!--<ul id="results-container" class="results-container"></ul>-->
             </form>
+
+            <!--<script src="/search.js" type="text/javascript"></script>-->
+            <!--<script type="text/javascript">-->
+            <!--SimpleJekyllSearch({-->
+            <!--searchInput: document.getElementById('search-field'),-->
+            <!--resultsContainer: document.getElementById('results-container'),-->
+            <!--json: '/search.json',-->
+            <!--searchResultTemplate: '<li><a href="{url}" title="{desc}">{title}</a></li>',-->
+            <!--noResultsText: 'No results found',-->
+            <!--limit: 10,-->
+            <!--fuzzy: false,-->
+            <!--exclude: ['Welcome']-->
+            <!--})-->
+            <!--</script>-->
+
         </div>
     </div>
 </nav>
 
 
-    <div class="wrapper">
-      <div class="container">
-        <article class="post post--single entry" itemscope itemtype="http://schema.org/BlogPosting">
+
+<div class="wrapper">
+    <div class="container">
+        <div class="page page--archive">
+    <article class="post post--single entry" itemscope itemtype="http://schema.org/BlogPosting">
+
+        
+
+        <header class="post__header">
+            <h1 class="post__title" itemprop="name headline"><a href="">طوفان و راه‌های مقابله با آن</a></h1>
+        </header>
+
+        <div class="post__content" itemprop="articleBody">
+            <p>طوفان قابل پیش بینی است! آیا هرگز از خود پرسیده اید اگر محل سکونت شما در معرض طوفان شدید یا گردباد و یا تندباد و کولاک قرار گیرد چه اتفاقی رخ خواهد داد؟ نزولات آسمانی سنگین (بارانهای شدید)، بادهای شدید و صاعقه که با طوفان همراه هستند، می توانند به اموال شما خسارت وارد کنند و زندگی تان را نیز به خطر اندازند. سعی کنید بفهمید چه طوفانهایی ممکن است در منطقه شما رخ دهد و در چه زمانی از سال، احتمال وقوع آن بیشتر است. در زمان وقوع حادثه، رسانه های گروهی، وارد عمل می‌شوند تا هشدارهای عمومی را به همگان اعلام کنند. اگر به توصیه های آنها گوش فرادهید، متوجه خواهید شد که چه هنگام طوفان به منطقه شما نزدیک می‌شود. مرحله بعد، آن است که بدانید برای حفاظت از خانه و خانواده خود، چه می توانید بکنید.</p>
+
+        </div>
+
+    </article>
 
     
-
-    <header class="post__header">
-        <h1 class="post__title" itemprop="name headline"><a href="">طوفان و راه‌های مقابله با آن</a></h1>
-    </header>
-
-    <div class="post__content" itemprop="articleBody">
-        <p>طوفان قابل پیش بینی است! آیا هرگز از خود پرسیده اید اگر محل سکونت شما در معرض طوفان شدید یا گردباد و یا تندباد و کولاک قرار گیرد چه اتفاقی رخ خواهد داد؟ نزولات آسمانی سنگین (بارانهای شدید)، بادهای شدید و صاعقه که با طوفان همراه هستند، می توانند به اموال شما خسارت وارد کنند و زندگی تان را نیز به خطر اندازند. سعی کنید بفهمید چه طوفانهایی ممکن است در منطقه شما رخ دهد و در چه زمانی از سال، احتمال وقوع آن بیشتر است. در زمان وقوع حادثه، رسانه های گروهی، وارد عمل می‌شوند تا هشدارهای عمومی را به همگان اعلام کنند. اگر به توصیه های آنها گوش فرادهید، متوجه خواهید شد که چه هنگام طوفان به منطقه شما نزدیک می‌شود. مرحله بعد، آن است که بدانید برای حفاظت از خانه و خانواده خود، چه می توانید بکنید.</p>
-
-    </div>
-
-</article>
-
-
-
-
-
-
-<section class="section posts row">
     
+    
+    
+
+    <section class="section posts row">
+        
         <article class="post post--grid">
     <a class="inner" href="/article/%D8%B7%D9%88%D9%81%D8%A7%D9%86/" title="Jan 4, 2016">
     <div class="post__thumbnail">
@@ -116,7 +139,7 @@
     </a>
 </article>
 
-    
+        
         <article class="post post--grid">
     <a class="inner" href="/article/%D9%82%D8%A8%D9%84-%D8%A7%D8%B2-%D9%88%D9%82%D9%88%D8%B9-%D8%B7%D9%88%D9%81%D8%A7%D9%86-%DA%86%D9%87-%D8%A8%D8%A7%DB%8C%D8%AF-%DA%A9%D8%B1%D8%AF/" title="Feb 11, 2013">
     <div class="post__thumbnail">
@@ -136,7 +159,7 @@
     </a>
 </article>
 
-    
+        
         <article class="post post--grid">
     <a class="inner" href="/article/%D8%B1%D8%B9%D8%A7%DB%8C%D8%AA-%D9%86%DA%A9%D8%A7%D8%AA-%D8%A7%DB%8C%D9%85%D9%86%DB%8C-%D9%87%D9%86%DA%AF%D8%A7%D9%85-%D9%88%D9%82%D9%88%D8%B9-%D8%B7%D9%88%D9%81%D8%A7%D9%86/" title="Feb 11, 2013">
     <div class="post__thumbnail">
@@ -156,7 +179,7 @@
     </a>
 </article>
 
-    
+        
         <article class="post post--grid">
     <a class="inner" href="/article/%D8%B1%D8%B9%D8%A7%DB%8C%D8%AA-%D9%86%DA%A9%D8%A7%D8%AA-%D8%A7%DB%8C%D9%85%D9%86%DB%8C-%D8%A8%D8%B9%D8%AF-%D8%A7%D8%B2-%D9%88%D9%82%D9%88%D8%B9-%D8%B7%D9%88%D9%81%D8%A7%D9%86/" title="Feb 11, 2013">
     <div class="post__thumbnail">
@@ -176,14 +199,14 @@
     </a>
 </article>
 
-    
-</section>
+        
+    </section>
+</div>
 
-
-      </div>
     </div>
+</div>
 
-    <footer class="b-footer">
+<footer class="b-footer">
     <div class="wrapper">
         <div class="container">
             <ul class="b-footer__navigation">
@@ -209,6 +232,6 @@
 
 </script>
 
-  </body>
+</body>
 
 </html>

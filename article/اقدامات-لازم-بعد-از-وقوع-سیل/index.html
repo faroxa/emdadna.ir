@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="fa">
 
-  <head>
+<head>
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
@@ -19,9 +19,9 @@
 </head>
 
 
-  <body>
+<body>
 
-    <header class="site-header">
+<header class="site-header">
     <div class="wrapper">
         <div class="container">
             <a href="/" class="logo" title="امدادنا"> امدادنا </a>
@@ -38,61 +38,84 @@
 <nav class="navbar">
     <div class="wrapper">
         <div class="container">
-            <ul class="navbar__actions row">
-                <li>
-                    <a href="/"> خانه </a>
+            <ul class="navbar__actions">
+                <li
+                >
+                <a href="/"> خانه </a>
                 </li>
-                <li>
+                <li
+                >
                 <a href="/flood">سیل و سونامی</a>
                 </li>
-                <li>
+                <li
+                >
                 <a href="/earthquake">زمین‌لرزه</a>
                 </li>
-                <li>
+                <li
+                >
                 <a href="/fire">آتش‌سوزی</a>
                 </li>
-                <li>
+                <li
+                >
                 <a href="/storm">طوفان</a>
                 </li>
-                <li>
+                <li
+                >
                 <a href="/rescue">کمک‌های اولیه</a>
                 </li>
             </ul>
 
             <form name="cse" class="navbar-search-form" method="get" action="https://www.google.com/search">
-
-                <input type="hidden" name="sitesearch" value="emdadna.ir" />
-                <input type="hidden" name="cref" value="" />
-                <input type="hidden" name="ie" value="utf-8" />
-                <input type="hidden" name="hl" value="fa" />
-                <input type="text" class="search-field" name="q" value="" placeholder="جستجو کنید">
+                <input type="hidden" name="sitesearch" value="emdadna.ir"/>
+                <input type="hidden" name="cref" value=""/>
+                <input type="hidden" name="ie" value="utf-8"/>
+                <input type="hidden" name="hl" value="fa"/>
+                <input type="text" id="search-field" class="search-field" name="q" value="" placeholder="جستجو کنید">
                 <button type="submit" class="search-btn"><i class="material-icons">&#xE8B6;</i></button>
+                <!--<ul id="results-container" class="results-container"></ul>-->
             </form>
+
+            <!--<script src="/search.js" type="text/javascript"></script>-->
+            <!--<script type="text/javascript">-->
+            <!--SimpleJekyllSearch({-->
+            <!--searchInput: document.getElementById('search-field'),-->
+            <!--resultsContainer: document.getElementById('results-container'),-->
+            <!--json: '/search.json',-->
+            <!--searchResultTemplate: '<li><a href="{url}" title="{desc}">{title}</a></li>',-->
+            <!--noResultsText: 'No results found',-->
+            <!--limit: 10,-->
+            <!--fuzzy: false,-->
+            <!--exclude: ['Welcome']-->
+            <!--})-->
+            <!--</script>-->
+
         </div>
     </div>
 </nav>
 
 
-    <div class="wrapper">
-      <div class="container">
-        <article class="post post--single entry" itemscope itemtype="http://schema.org/BlogPosting">
 
-    
-        <img class="post__cover" src="/wp-content/uploads/2013/02/flood-03.jpg" alt="" />
-    
+<div class="wrapper">
+    <div class="container">
+        <div class="page page--post">
+    <article class="post post--single entry" itemscope itemtype="http://schema.org/BlogPosting">
 
-    <header class="post__header">
-        <h1 class="post__title" itemprop="name headline"><a href="">اقدامات لازم بعد از وقوع سیل</a></h1>
+        
+        <img class="post__cover" src="/wp-content/uploads/2013/02/flood-03.jpg" alt=""/>
+        
 
-        <p class="post__meta">
-            <time datetime="2013-02-11T00:00:00+03:30" itemprop="datePublished" class="hidden">Feb 11,
-                2013
-            </time>
-        </p>
-    </header>
+        <header class="post__header">
+            <h1 class="post__title" itemprop="name headline"><a href="">اقدامات لازم بعد از وقوع سیل</a></h1>
 
-    <div class="post__content" itemprop="articleBody">
-        <ul>
+            <p class="post__meta">
+                <time datetime="2013-02-11T00:00:00+03:30" itemprop="datePublished" class="hidden">Feb 11,
+                    2013
+                </time>
+            </p>
+        </header>
+
+        <div class="post__content" itemprop="articleBody">
+            <ul>
   <li>با مناطق سیل زده آشنا شوید، اگر در این موارد مطمئن نیستید، با مراکز جمعیت هلال احمر محل خود تماس بگیرید.</li>
   <li>برای کسب اطلاعات و دستورالعملهای لازم، به رادیو گوش دهید.</li>
   <li>کمکهای اولیه را به افراد آسیب دیده برسانید و در صورت نیاز از دیگران کمک بخواهید.</li>
@@ -104,14 +127,14 @@
   <li>در منطقه سیل زده مراقب مارها باشید؛ زیرا سیل مارها را از لانه بیرون می کشد.</li>
 </ul>
 
+        </div>
+
+    </article>
+</div>
     </div>
+</div>
 
-</article>
-
-      </div>
-    </div>
-
-    <footer class="b-footer">
+<footer class="b-footer">
     <div class="wrapper">
         <div class="container">
             <ul class="b-footer__navigation">
@@ -137,6 +160,6 @@
 
 </script>
 
-  </body>
+</body>
 
 </html>

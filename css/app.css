@@ -456,6 +456,7 @@ body {
   margin: 0 auto;
   max-width: 100%;
   padding: 0 10px;
+  position: relative;
   width: 100%; }
   .container:before, .container:after {
     content: "";
@@ -502,6 +503,9 @@ a {
 
 .section {
   margin-bottom: 20px; }
+
+.page {
+  margin-top: 20px; }
 
 .card {
   background: #fff;
@@ -592,12 +596,11 @@ button, input, optgroup, select, textarea {
   border-top: 1px solid #e0e0e0;
   color: #fff;
   font-size: 12px;
-  height: 46px;
-  margin-bottom: 20px;
+  height: 48px;
   position: relative;
   z-index: 3; }
   .navbar a {
-    color: #fff; }
+    color: #212121; }
 
 .navbar__logo {
   float: right;
@@ -644,10 +647,33 @@ button, input, optgroup, select, textarea {
 .dropdown {
   position: relative; }
 
+.results-container {
+  background: #fff;
+  border: 1px solid #e0e0e0;
+  color: #000;
+  left: 0;
+  position: absolute;
+  top: 100%;
+  width: 340px;
+  margin-top: -1px; }
+  .results-container li a {
+    color: #212121;
+    display: block;
+    padding: 10px; }
+    .results-container li a:before {
+      background: #F44336;
+      border-radius: 50%;
+      content: ' ';
+      display: inline-block;
+      height: 6px;
+      margin-left: 5px;
+      width: 6px; }
+    .results-container li a:hover {
+      background: #e6e6e6; }
+
 .navbar-search-form {
   float: left;
   margin-top: 6px;
-  overflow: hidden;
   position: relative;
   width: 200px; }
 
@@ -667,7 +693,6 @@ button, input, optgroup, select, textarea {
   font-size: 11px;
   height: 32px;
   line-height: 32px;
-  overflow: hidden;
   padding: 0 10px;
   position: relative;
   width: 100%; }
@@ -700,7 +725,14 @@ button, input, optgroup, select, textarea {
       clear: both; }
 
   .navbar__actions {
+    margin-right: -10px;
+    margin-left: -10px;
     float: none; }
+    .navbar__actions:before, .navbar__actions:after {
+      content: "";
+      display: table; }
+    .navbar__actions:after {
+      clear: both; }
     .navbar__actions li {
       width: 50%;
       min-height: 1px;
@@ -873,19 +905,86 @@ object {
 @media (min-width: 940px) {
   .post__thumbnail {
     height: 140px; } }
-.category-box {
+.intro {
+  background: whitesmoke;
+  border-bottom: 1px solid #e0e0e0;
+  height: 300px;
+  padding: 20px 0; }
+
+.box {
   width: 20%;
   min-height: 1px;
   float: right;
-  padding: 0 10px; }
-  .category-box:nth-child(5n):before, .category-box:nth-child(5n):after {
+  padding: 0 10px;
+  overflow: hidden;
+  position: relative; }
+  .box:nth-child(5n):before, .box:nth-child(5n):after {
     content: "";
     display: table; }
-  .category-box:nth-child(5n):after {
+  .box:nth-child(5n):after {
     clear: both; }
-  .category-box > .inner {
-    min-height: 50px;
-    background: #000; }
+  .box.box--type-1 {
+    width: 66.66667%;
+    min-height: 1px;
+    float: right;
+    padding: 0 10px; }
+    .box.box--type-1:nth-child(3n):before, .box.box--type-1:nth-child(3n):after {
+      content: "";
+      display: table; }
+    .box.box--type-1:nth-child(3n):after {
+      clear: both; }
+  .box.box--type-2 {
+    width: 33.33333%;
+    min-height: 1px;
+    float: right;
+    padding: 0 10px; }
+    .box.box--type-2:nth-child(3n):before, .box.box--type-2:nth-child(3n):after {
+      content: "";
+      display: table; }
+    .box.box--type-2:nth-child(3n):after {
+      clear: both; }
+    .box.box--type-2 .inner {
+      background-image: linear-gradient(-180deg, #FFFFFF 0%, #E2E2E2 100%);
+      border: 1px solid #e0e0e0;
+      display: block;
+      height: 260px;
+      position: relative; }
+
+.slider {
+  border-radius: 4px;
+  height: 260px;
+  min-height: 260px;
+  overflow: hidden;
+  position: relative;
+  text-align: center; }
+
+.slider__item {
+  background-size: cover;
+  height: 260px;
+  display: block; }
+
+.slider__caption {
+  background: rgba(0, 0, 0, 0.7);
+  bottom: 0;
+  color: #fff;
+  font-size: 14px;
+  font-weight: 300;
+  padding: 15px;
+  position: absolute;
+  right: 0;
+  width: 100%; }
+
+.what-is-emdadna {
+  background: url("/assets/img/what-is-emdadna.png") no-repeat center;
+  background-size: 122px 136px;
+  height: 100%;
+  position: absolute;
+  right: 0;
+  top: 0;
+  width: 100%; }
+  @media only screen and (min--moz-device-pixel-ratio: 2), only screen and (-o-min-device-pixel-ratio: 2 / 1), only screen and (-webkit-min-device-pixel-ratio: 2), only screen and (min-device-pixel-ratio: 2) {
+    .what-is-emdadna {
+      background-image: url("../assets/img/what-is-emdadna@2x.png"); } }
 
 .post--single {
   margin-bottom: 20px; }

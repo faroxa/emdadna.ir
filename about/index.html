@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="fa">
 
-  <head>
+<head>
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
@@ -19,9 +19,9 @@
 </head>
 
 
-  <body>
+<body>
 
-    <header class="site-header">
+<header class="site-header">
     <div class="wrapper">
         <div class="container">
             <a href="/" class="logo" title="امدادنا"> امدادنا </a>
@@ -38,55 +38,78 @@
 <nav class="navbar">
     <div class="wrapper">
         <div class="container">
-            <ul class="navbar__actions row">
-                <li>
-                    <a href="/"> خانه </a>
+            <ul class="navbar__actions">
+                <li
+                >
+                <a href="/"> خانه </a>
                 </li>
-                <li>
+                <li
+                >
                 <a href="/flood">سیل و سونامی</a>
                 </li>
-                <li>
+                <li
+                >
                 <a href="/earthquake">زمین‌لرزه</a>
                 </li>
-                <li>
+                <li
+                >
                 <a href="/fire">آتش‌سوزی</a>
                 </li>
-                <li>
+                <li
+                >
                 <a href="/storm">طوفان</a>
                 </li>
-                <li>
+                <li
+                >
                 <a href="/rescue">کمک‌های اولیه</a>
                 </li>
             </ul>
 
             <form name="cse" class="navbar-search-form" method="get" action="https://www.google.com/search">
-
-                <input type="hidden" name="sitesearch" value="emdadna.ir" />
-                <input type="hidden" name="cref" value="" />
-                <input type="hidden" name="ie" value="utf-8" />
-                <input type="hidden" name="hl" value="fa" />
-                <input type="text" class="search-field" name="q" value="" placeholder="جستجو کنید">
+                <input type="hidden" name="sitesearch" value="emdadna.ir"/>
+                <input type="hidden" name="cref" value=""/>
+                <input type="hidden" name="ie" value="utf-8"/>
+                <input type="hidden" name="hl" value="fa"/>
+                <input type="text" id="search-field" class="search-field" name="q" value="" placeholder="جستجو کنید">
                 <button type="submit" class="search-btn"><i class="material-icons">&#xE8B6;</i></button>
+                <!--<ul id="results-container" class="results-container"></ul>-->
             </form>
+
+            <!--<script src="/search.js" type="text/javascript"></script>-->
+            <!--<script type="text/javascript">-->
+            <!--SimpleJekyllSearch({-->
+            <!--searchInput: document.getElementById('search-field'),-->
+            <!--resultsContainer: document.getElementById('results-container'),-->
+            <!--json: '/search.json',-->
+            <!--searchResultTemplate: '<li><a href="{url}" title="{desc}">{title}</a></li>',-->
+            <!--noResultsText: 'No results found',-->
+            <!--limit: 10,-->
+            <!--fuzzy: false,-->
+            <!--exclude: ['Welcome']-->
+            <!--})-->
+            <!--</script>-->
+
         </div>
     </div>
 </nav>
 
 
-    <div class="wrapper">
-      <div class="container">
-        <article class="post post--single entry" itemscope itemtype="http://schema.org/BlogPosting">
 
-  
-  <img class="post__cover" src="/wp-content/uploads/2013/02/what-is-emdadna-cover.jpg" alt="" />
-  
+<div class="wrapper">
+    <div class="container">
+        <div class="page page--page">
+    <article class="post post--single entry" itemscope itemtype="http://schema.org/BlogPosting">
 
-  <header class="post__header">
-    <h1 class="post__title" itemprop="name headline"><a href="">درباره امدادنا</a></h1>
-  </header>
+        
+        <img class="post__cover" src="/wp-content/uploads/2013/02/what-is-emdadna-cover.jpg" alt=""/>
+        
 
-  <div class="post__content" itemprop="articleBody">
-    <p>متاسفانه هرساله شاهد اتفاقات تلخ و ناگواری هستیم که در گوشه و کنار کشور عزیزمان به وقوع می‌پیوندند ولی باز هم فراموش می‌کنیم که ممکن است این اتفاق برای شهر یا منطقه ما نیز بیفتد. چیزهایی را فراموش می‌کنیم که از ساده‌ترین نکات جلوگیری از صدمات حاصله از وقوع یک بلای طبیعی‌است. اگر بخواهیم مثالی بزنیم همه می‌دانیم که در چندین سال گذشته، زلزله جان بسیاری از هم‌میهنان عزیزمان را گرفته است و خیلی از فوت‌ها به خاطر رعایت نکردن مسائلی کاملا پیش پا افتاده و ساده بوده‌اند که همه روزه به سادگی از کنار آنها رد می‌شویم. هرسال در کتاب‌های درسی‌مان خواندیم که بهتر است یک چسب پهن روی شیشه‌ها و پنجره‌ها بکشیم تا مانع خرد شدن و پرتاب خرده‌شیشه‌ها به اطراف شویم اما واقعا چند نفر از ما این کار را انجام داده‌ایم؟ چند نفر از ما جای ساعت دیواری را محکم کرده‌ایم؟ چند نفر از ما بعد از نصب شیر گاز، حتی پس از سال‌ها دوباره آن را چک کرده‌ایم؟ چند نفر از ما این کارها را انجام داده‌ایم؟ شاید هم‌اکنون کمی تلنگر وارد کرده باشیم اما مطمئن باشید به زودی دوباره فراموشش خواهید کرد!</p>
+        <header class="post__header">
+            <h1 class="post__title" itemprop="name headline"><a href="">درباره امدادنا</a></h1>
+        </header>
+
+        <div class="post__content" itemprop="articleBody">
+            <p>متاسفانه هرساله شاهد اتفاقات تلخ و ناگواری هستیم که در گوشه و کنار کشور عزیزمان به وقوع می‌پیوندند ولی باز هم فراموش می‌کنیم که ممکن است این اتفاق برای شهر یا منطقه ما نیز بیفتد. چیزهایی را فراموش می‌کنیم که از ساده‌ترین نکات جلوگیری از صدمات حاصله از وقوع یک بلای طبیعی‌است. اگر بخواهیم مثالی بزنیم همه می‌دانیم که در چندین سال گذشته، زلزله جان بسیاری از هم‌میهنان عزیزمان را گرفته است و خیلی از فوت‌ها به خاطر رعایت نکردن مسائلی کاملا پیش پا افتاده و ساده بوده‌اند که همه روزه به سادگی از کنار آنها رد می‌شویم. هرسال در کتاب‌های درسی‌مان خواندیم که بهتر است یک چسب پهن روی شیشه‌ها و پنجره‌ها بکشیم تا مانع خرد شدن و پرتاب خرده‌شیشه‌ها به اطراف شویم اما واقعا چند نفر از ما این کار را انجام داده‌ایم؟ چند نفر از ما جای ساعت دیواری را محکم کرده‌ایم؟ چند نفر از ما بعد از نصب شیر گاز، حتی پس از سال‌ها دوباره آن را چک کرده‌ایم؟ چند نفر از ما این کارها را انجام داده‌ایم؟ شاید هم‌اکنون کمی تلنگر وارد کرده باشیم اما مطمئن باشید به زودی دوباره فراموشش خواهید کرد!</p>
 
 <p>امدادنا یک پروژه غیر انتفاعی و یک دانشنامه از بدیهیاتی‌است که شما باید در رابطه با هرگونه بلایای طبیعی بدانید تا بهترین واکنش‌ها را در هنگام وقوع آنها انجام دهید. در اینجا سعی امدادنا بر این است تا با پوشش کامل راهکارها، روش‌های مقابله و معرفی انواع بلایای طبیعی بتواند تاثیری هرچند ناچیز در جلوگیری از آسیب‌های احتمالی در هنگام وقوع انواع بلایای طبیعی داشته باشد.</p>
 
@@ -99,14 +122,14 @@
 <p>امدادنا بر پایه یک برنامه مشخص پیش می‌رود و قسمت‌های مختلف وبسایت به مرور زمان کامل خواهند شد. هر وبسایتی از ابتدا کامل نیست و به مرور زمان مسیر کلی خود را پیدا می‌کند. شما می‌توانید با فیدبک‌های خودتان از طریق <a href="http://emdadna.dev/contact" title="ارتباط با ما">فرم تماس وبسایت</a>، ما را در هرچه بهتر کردن وبسایت کمک کرده و مطمئن باشید کوچکترین نکاتی که شما برای ما می‌فرستید برای ما ارزشمند هستند.</p>
 
 
-  </div>
+        </div>
 
-</article>
-
-      </div>
+    </article>
+</div>
     </div>
+</div>
 
-    <footer class="b-footer">
+<footer class="b-footer">
     <div class="wrapper">
         <div class="container">
             <ul class="b-footer__navigation">
@@ -132,6 +155,6 @@
 
 </script>
 
-  </body>
+</body>
 
 </html>
