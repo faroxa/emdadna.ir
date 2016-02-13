@@ -1024,7 +1024,8 @@ object {
 
 .post ul {
   list-style: inherit;
-  padding-right: 40px; }
+  padding-right: 40px;
+  margin-bottom: 20px; }
 
 .navigation-bar {
   border-top: 1px solid #ccc;
